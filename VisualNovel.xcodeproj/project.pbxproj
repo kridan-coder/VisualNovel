@@ -13,6 +13,7 @@
 		E6152C52260C90350091E48C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6152C50260C90350091E48C /* Main.storyboard */; };
 		E6152C54260C90370091E48C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6152C53260C90370091E48C /* Assets.xcassets */; };
 		E6152C57260C90370091E48C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6152C55260C90370091E48C /* LaunchScreen.storyboard */; };
+		E6152C66260CA4DF0091E48C /* images in Resources */ = {isa = PBXBuildFile; fileRef = E6152C65260CA4DF0091E48C /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,7 @@
 		E6152C53260C90370091E48C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6152C56260C90370091E48C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6152C58260C90370091E48C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6152C63260C982E0091E48C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E6152C65260CA4DF0091E48C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +73,7 @@
 		E6152C60260C949A0091E48C /* RawAssets */ = {
 			isa = PBXGroup;
 			children = (
-				E6152C63260C982E0091E48C /* MyPlayground.playground */,
+				E6152C65260CA4DF0091E48C /* images */,
 			);
 			path = RawAssets;
 			sourceTree = "<group>";
@@ -134,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6152C66260CA4DF0091E48C /* images in Resources */,
 				E6152C57260C90370091E48C /* LaunchScreen.storyboard in Resources */,
 				E6152C54260C90370091E48C /* Assets.xcassets in Resources */,
 				E6152C52260C90350091E48C /* Main.storyboard in Resources */,
