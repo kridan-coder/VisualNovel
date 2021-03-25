@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cku-5l-RCG">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="quattrocento.ttf">
+            <string>Quattrocento</string>
+        </array>
+        <array key="roboto.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main Navigation View-->
         <scene sceneID="G8Z-59-wSJ">
             <objects>
                 <navigationController id="cku-5l-RCG" customClass="MainNavigationView" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" hidden="YES" autoresizesSubviews="NO" contentMode="scaleToFill" id="d2S-Lu-MLJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -24,37 +32,113 @@
             </objects>
             <point key="canvasLocation" x="-502" y="-1111"/>
         </scene>
-        <!--hi-->
+        <!--start-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Egm-Qg-zIa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1SceneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6Xh-mf-K2m">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jne-Qk-wma">
+                                <rect key="frame" x="0.0" y="328" width="428" height="144.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя визуальная новелла" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-Sd-pS6">
+                                        <rect key="frame" x="20" y="14.333333333333321" width="388" height="115.66666666666669"/>
+                                        <fontDescription key="fontDescription" name="Quattrocento" family="Quattrocento" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="KYH-Sd-pS6" firstAttribute="centerY" secondItem="Jne-Qk-wma" secondAttribute="centerY" id="3F2-cr-ALm"/>
+                                    <constraint firstItem="KYH-Sd-pS6" firstAttribute="trailing" secondItem="Jne-Qk-wma" secondAttribute="trailing" priority="999" constant="20" id="FFt-w7-VMc"/>
+                                    <constraint firstItem="KYH-Sd-pS6" firstAttribute="height" secondItem="Jne-Qk-wma" secondAttribute="height" multiplier="0.8" id="RbA-Uv-EcK"/>
+                                    <constraint firstItem="KYH-Sd-pS6" firstAttribute="centerX" secondItem="Jne-Qk-wma" secondAttribute="centerX" id="h2k-Cc-F5S"/>
+                                    <constraint firstItem="KYH-Sd-pS6" firstAttribute="leading" secondItem="Jne-Qk-wma" secondAttribute="leading" priority="999" constant="20" id="tui-RC-xzB"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-fd-7fT">
+                                <rect key="frame" x="0.0" y="661" width="428" height="52.666666666666629"/>
+                                <color key="backgroundColor" name="DarkBlueColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                <state key="normal" title="Начать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b94-uW-3TA" kind="show" id="azQ-M0-7qU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jc6-H3-u2T"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6Xh-mf-K2m" secondAttribute="trailing" id="2HG-WY-bMs"/>
+                            <constraint firstItem="vd9-fd-7fT" firstAttribute="trailing" secondItem="Egm-Qg-zIa" secondAttribute="trailing" id="2R1-2N-iNw"/>
+                            <constraint firstItem="Jne-Qk-wma" firstAttribute="leading" secondItem="Egm-Qg-zIa" secondAttribute="leading" id="6Dd-TJ-GqZ"/>
                             <constraint firstItem="6Xh-mf-K2m" firstAttribute="leading" secondItem="Egm-Qg-zIa" secondAttribute="leading" id="6vW-u3-AaI"/>
+                            <constraint firstItem="vd9-fd-7fT" firstAttribute="bottom" secondItem="jc6-H3-u2T" secondAttribute="bottom" multiplier="0.8" id="8Dk-ih-BQe"/>
                             <constraint firstItem="6Xh-mf-K2m" firstAttribute="top" secondItem="jc6-H3-u2T" secondAttribute="top" id="9Oo-3O-gxJ"/>
+                            <constraint firstItem="vd9-fd-7fT" firstAttribute="leading" secondItem="Egm-Qg-zIa" secondAttribute="leading" id="AkL-LD-VhL"/>
                             <constraint firstAttribute="bottom" secondItem="6Xh-mf-K2m" secondAttribute="bottom" id="OsP-af-3DW"/>
+                            <constraint firstAttribute="trailing" secondItem="Jne-Qk-wma" secondAttribute="trailing" id="Wgd-y4-UBA"/>
+                            <constraint firstItem="vd9-fd-7fT" firstAttribute="top" secondItem="Jne-Qk-wma" secondAttribute="bottom" multiplier="1.4" id="edg-j7-Xw4"/>
+                            <constraint firstItem="Jne-Qk-wma" firstAttribute="centerY" secondItem="jc6-H3-u2T" secondAttribute="centerY" multiplier="2.45/3" id="gde-Co-Svs"/>
+                            <constraint firstItem="Jne-Qk-wma" firstAttribute="bottom" secondItem="Egm-Qg-zIa" secondAttribute="bottom" multiplier="0.51" priority="999" id="snc-vV-X52"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="hi" id="T4X-YG-HD8"/>
+                    <navigationItem key="navigationItem" title="start" id="T4X-YG-HD8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="-1097"/>
+            <point key="canvasLocation" x="335" y="-1112"/>
+        </scene>
+        <!--continue-->
+        <scene sceneID="YcE-lp-HKr">
+            <objects>
+                <viewController id="b94-uW-3TA" customClass="ViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9jd-Ff-Eqf">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1SceneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Eah-YI-qpU">
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KiriushaPNG" id="8dW-d7-yf8">
+                                <rect key="frame" x="0.0" y="176" width="310" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gLE-zp-Gjl"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="Eah-YI-qpU" firstAttribute="leading" secondItem="9jd-Ff-Eqf" secondAttribute="leading" id="77G-Oc-GRB"/>
+                            <constraint firstAttribute="bottom" secondItem="Eah-YI-qpU" secondAttribute="bottom" id="Bbg-4l-qUy"/>
+                            <constraint firstAttribute="trailing" secondItem="Eah-YI-qpU" secondAttribute="trailing" id="SHG-MA-O5p"/>
+                            <constraint firstItem="Eah-YI-qpU" firstAttribute="top" secondItem="gLE-zp-Gjl" secondAttribute="top" id="pvu-2r-2CW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="continue" id="1Rz-Jx-YK5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xfc-m1-Zmd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202.8037383177571" y="-1112.526997840173"/>
         </scene>
     </scenes>
     <resources>
         <image name="1SceneBackground" width="720" height="1280"/>
+        <image name="KiriushaPNG" width="500" height="1232"/>
         <namedColor name="AccentColor">
+            <color red="0.15294117647058825" green="0.31764705882352939" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BlueColor">
+            <color red="0.45098039215686275" green="0.66666666666666663" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkBlueColor">
             <color red="0.15294117647058825" green="0.31764705882352939" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
