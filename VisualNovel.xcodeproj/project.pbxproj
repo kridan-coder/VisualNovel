@@ -14,6 +14,7 @@
 		E6152C54260C90370091E48C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6152C53260C90370091E48C /* Assets.xcassets */; };
 		E6152C7A260CC0080091E48C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6152C79260CC0080091E48C /* Launch Screen.storyboard */; };
 		E6152C7F260CCD1E0091E48C /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6152C7E260CCD1E0091E48C /* MainNavigationView.swift */; };
+		E6152C88260CD0E20091E48C /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6152C86260CD0650091E48C /* roboto.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E6152C58260C90370091E48C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6152C79260CC0080091E48C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E6152C7E260CCD1E0091E48C /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		E6152C86260CD0650091E48C /* roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		E6152C49260C90350091E48C /* VisualNovel */ = {
 			isa = PBXGroup;
 			children = (
+				E6152C84260CD0560091E48C /* fonts */,
 				E6152C4A260C90350091E48C /* AppDelegate.swift */,
 				E6152C4C260C90350091E48C /* SceneDelegate.swift */,
 				E6152C4E260C90350091E48C /* ViewController.swift */,
@@ -68,6 +71,14 @@
 				E6152C7E260CCD1E0091E48C /* MainNavigationView.swift */,
 			);
 			path = VisualNovel;
+			sourceTree = "<group>";
+		};
+		E6152C84260CD0560091E48C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E6152C86260CD0650091E48C /* roboto.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +141,7 @@
 				E6152C7A260CC0080091E48C /* Launch Screen.storyboard in Resources */,
 				E6152C54260C90370091E48C /* Assets.xcassets in Resources */,
 				E6152C52260C90350091E48C /* Main.storyboard in Resources */,
+				E6152C88260CD0E20091E48C /* roboto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
