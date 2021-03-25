@@ -56,6 +56,7 @@
 		E6152C49260C90350091E48C /* VisualNovel */ = {
 			isa = PBXGroup;
 			children = (
+				E6152C5F260C941E0091E48C /* raw assets */,
 				E6152C4A260C90350091E48C /* AppDelegate.swift */,
 				E6152C4C260C90350091E48C /* SceneDelegate.swift */,
 				E6152C4E260C90350091E48C /* ViewController.swift */,
@@ -65,6 +66,13 @@
 				E6152C58260C90370091E48C /* Info.plist */,
 			);
 			path = VisualNovel;
+			sourceTree = "<group>";
+		};
+		E6152C5F260C941E0091E48C /* raw assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "raw assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
