@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "2_2SceneBackground.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
