@@ -22,7 +22,8 @@ class HiByeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setButtons(buttons: [ButtonInfo(LabelText: "Начать", Segue: "da", Color: "DarkBlueColor")])
+        setLabelAndButtons(label: LabelInfo(LabelText: "Hello", Color: "DarkBlueColor"), buttons: [ButtonInfo(LabelText: "1", Color: "BlueColor", Segue: "da"), ButtonInfo(LabelText: "2", Color: "BlueColor", Segue: "da"),ButtonInfo(LabelText: "3", Color: "BlueColor", Segue: "da")])
+        
         // Do any additional setup after loading the view.
     }
 //writing this from a library

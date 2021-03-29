@@ -20,22 +20,39 @@ class MainNavigationView : UINavigationController{
     
 }
 
-
-public class ButtonInfo{
-    var Color: String
+public class LabelInfo{
     var LabelText: String
-    var Segue: String
+    var Color: String
     
-    init(LabelText: String, Segue: String, Color: String){
+    init(LabelText: String, Color: String){
         self.Color = Color
         self.LabelText = LabelText
+    }
+}
+
+
+public class ButtonInfo : LabelInfo{
+    var Segue: String
+    
+    init(LabelText: String, Color: String, Segue: String){
         self.Segue = Segue
+        super.init(LabelText: LabelText, Color: Color)
+    }
+}
+
+extension UILabel {
+    func setLabelAppearance(text: String, color: String, fontSize: CGFloat){
+        layer.backgroundColor = UIColor(named: color)?.cgColor
+        self.text = text
+        self.font = UIFont(name:"roboto", size: fontSize)
+        self.textAlignment = .center
+        self.textColor = UIColor.white
     }
 }
 
 extension UIButton {
     func setButtonAppearance(text: String, color: String, fontSize: CGFloat){
-        layer.backgroundColor = UIColor(named: "BlueColor")?.cgColor
+        layer.backgroundColor = UIColor(named: color)?.cgColor
         titleLabel?.font = UIFont(name:"roboto", size: fontSize)
 
         setTitle(text, for: .normal)
@@ -44,15 +61,20 @@ extension UIButton {
 }
 
 extension UIViewController{
-    func setButtons(buttons: [ButtonInfo]){
+    
+    func setLabelAndButtons(label: LabelInfo, buttons: [ButtonInfo]){
         let screenSize = UIScreen.main.bounds
         
         let buttonHeight =
-            (((screenSize.midY / 8.0) * CGFloat(buttons.count) * 2) <= screenSize.midY)
+            (((screenSize.midY / 8.0) * CGFloat(buttons.count + 2) * 2) <= screenSize.midY)
             ? (screenSize.midY / 8.0)
-            : screenSize.midY / CGFloat((buttons.count * 2))
+            : screenSize.midY / CGFloat((buttons.count * 2 + 2))
         
-        var currY = screenSize.midY + (screenSize.midY - CGFloat(buttons.count*2 - 1)*buttonHeight)/2
+        let UIlabel = UILabel(frame: CGRect(x: 0, y: screenSize.midY + buttonHeight, width: screenSize.width, height: buttonHeight))
+        UIlabel.setLabelAppearance(text: label.LabelText, color: label.Color, fontSize: buttonHeight/2)
+        self.view.addSubview(UIlabel)
+        
+        var currY = screenSize.midY + (screenSize.midY + buttonHeight - CGFloat(buttons.count*2 - 2)*buttonHeight)/2
         
         for i in 0..<buttons.count{
             let button = UIButton(frame: CGRect(x: 0, y: currY, width: screenSize.width, height: buttonHeight))
