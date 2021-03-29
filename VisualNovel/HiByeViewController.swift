@@ -22,9 +22,10 @@ class HiByeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setButtons(buttons: [ButtonInfo(LabelText: "Начать", Segue: "da", Color: "DarkBlueColor")])
         // Do any additional setup after loading the view.
     }
 //writing this from a library
 }
+
 
