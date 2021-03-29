@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +27,7 @@
         <!--start-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HiByeViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CustomViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Egm-Qg-zIa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -36,10 +35,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1SceneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6Xh-mf-K2m">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jv4-rn-G2w">
-                                <rect key="frame" x="20" y="414" width="374" height="448"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jc6-H3-u2T"/>
                         <color key="backgroundColor" name="AccentColor"/>
@@ -47,11 +42,7 @@
                             <constraint firstAttribute="trailing" secondItem="6Xh-mf-K2m" secondAttribute="trailing" id="2HG-WY-bMs"/>
                             <constraint firstItem="6Xh-mf-K2m" firstAttribute="leading" secondItem="Egm-Qg-zIa" secondAttribute="leading" id="6vW-u3-AaI"/>
                             <constraint firstItem="6Xh-mf-K2m" firstAttribute="top" secondItem="jc6-H3-u2T" secondAttribute="top" id="9Oo-3O-gxJ"/>
-                            <constraint firstItem="jv4-rn-G2w" firstAttribute="height" secondItem="Egm-Qg-zIa" secondAttribute="height" multiplier="0.5" id="FK7-Go-I88"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="jv4-rn-G2w" secondAttribute="bottom" id="ORz-Xv-zkW"/>
                             <constraint firstAttribute="bottom" secondItem="6Xh-mf-K2m" secondAttribute="bottom" id="OsP-af-3DW"/>
-                            <constraint firstItem="jv4-rn-G2w" firstAttribute="leading" secondItem="Egm-Qg-zIa" secondAttribute="leadingMargin" id="d4A-Mb-7Cu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jv4-rn-G2w" secondAttribute="trailing" id="lmc-3x-2qO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="start" id="T4X-YG-HD8"/>
@@ -63,7 +54,7 @@
         <!--continue-->
         <scene sceneID="YcE-lp-HKr">
             <objects>
-                <viewController id="b94-uW-3TA" customClass="HiByeViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b94-uW-3TA" customClass="CustomViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9jd-Ff-Eqf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,8 +89,5 @@
         <namedColor name="AccentColor">
             <color red="0.15294117647058825" green="0.31764705882352939" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

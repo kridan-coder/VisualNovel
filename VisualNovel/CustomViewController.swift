@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HiByeViewController: UIViewController {
+class CustomViewController: UIViewController {
 
     var MainWindowText: String!
     var ButtonText: String!
@@ -22,7 +22,7 @@ class HiByeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLabelAndButtons(label: LabelInfo(LabelText: "Hello", Color: "DarkBlueColor"), buttons: [ButtonInfo(LabelText: "1", Color: "BlueColor", Segue: "da"), ButtonInfo(LabelText: "2", Color: "BlueColor", Segue: "da"),ButtonInfo(LabelText: "3", Color: "BlueColor", Segue: "da")])
+        setTextFieldWithLabelAndButton(label: LabelInfo(LabelText: "Привет! Меня зовут Кирюша. А тебя?", Color: "DarkBlueColor"), fieldPlaceholder: "Введите свое имя...", button: ButtonInfo(LabelText: "Подтвердить", Color: "DarkBlueColor", Segue: "da"))
         
         // Do any additional setup after loading the view.
     }
