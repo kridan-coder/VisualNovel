@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cku-5l-RCG">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cku-5l-RCG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,19 +34,19 @@
         <!--start-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HiByeViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Egm-Qg-zIa">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1SceneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6Xh-mf-K2m">
-                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jne-Qk-wma">
-                                <rect key="frame" x="0.0" y="328" width="428" height="144.33333333333337"/>
+                                <rect key="frame" x="0.0" y="236.5" width="600" height="69.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя визуальная новелла" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-Sd-pS6">
-                                        <rect key="frame" x="20" y="14.333333333333321" width="388" height="115.66666666666669"/>
+                                        <rect key="frame" x="20" y="6.5" width="560" height="56"/>
                                         <fontDescription key="fontDescription" name="Quattrocento" family="Quattrocento" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -62,8 +61,8 @@
                                     <constraint firstItem="KYH-Sd-pS6" firstAttribute="leading" secondItem="Jne-Qk-wma" secondAttribute="leading" priority="999" constant="20" id="tui-RC-xzB"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-fd-7fT">
-                                <rect key="frame" x="0.0" y="661" width="428" height="52.666666666666629"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-fd-7fT">
+                                <rect key="frame" x="0.0" y="428.5" width="600" height="51.5"/>
                                 <color key="backgroundColor" name="DarkBlueColor"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
                                 <state key="normal" title="Начать">
@@ -74,7 +73,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="jc6-H3-u2T"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6Xh-mf-K2m" secondAttribute="trailing" id="2HG-WY-bMs"/>
@@ -90,6 +88,7 @@
                             <constraint firstItem="Jne-Qk-wma" firstAttribute="centerY" secondItem="jc6-H3-u2T" secondAttribute="centerY" multiplier="2.45/3" id="gde-Co-Svs"/>
                             <constraint firstItem="Jne-Qk-wma" firstAttribute="bottom" secondItem="Egm-Qg-zIa" secondAttribute="bottom" multiplier="0.51" priority="999" id="snc-vV-X52"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="jc6-H3-u2T"/>
                     </view>
                     <navigationItem key="navigationItem" title="start" id="T4X-YG-HD8"/>
                 </viewController>
@@ -100,20 +99,19 @@
         <!--continue-->
         <scene sceneID="YcE-lp-HKr">
             <objects>
-                <viewController id="b94-uW-3TA" customClass="ViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b94-uW-3TA" customClass="HiByeViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9jd-Ff-Eqf">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1SceneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Eah-YI-qpU">
-                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KiriushaPNG" id="8dW-d7-yf8">
                                 <rect key="frame" x="0.0" y="176" width="310" height="769"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="gLE-zp-Gjl"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="Eah-YI-qpU" firstAttribute="leading" secondItem="9jd-Ff-Eqf" secondAttribute="leading" id="77G-Oc-GRB"/>
@@ -121,6 +119,7 @@
                             <constraint firstAttribute="trailing" secondItem="Eah-YI-qpU" secondAttribute="trailing" id="SHG-MA-O5p"/>
                             <constraint firstItem="Eah-YI-qpU" firstAttribute="top" secondItem="gLE-zp-Gjl" secondAttribute="top" id="pvu-2r-2CW"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="gLE-zp-Gjl"/>
                     </view>
                     <navigationItem key="navigationItem" title="continue" id="1Rz-Jx-YK5"/>
                 </viewController>
