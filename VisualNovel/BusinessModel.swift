@@ -7,23 +7,35 @@
 
 import Foundation
 
+public enum SceneType{
+    case Main, Input, Choice
+}
+
+public struct ViewControllerData{
+    let sceneType: SceneType
+    let backgroundImageName: String
+    let additionalImageName: String?
+    let label: LabelInfo
+    let buttons: [ButtonInfo]
+    let textFieldPlaceholder: String?
+}
 
 public class LabelInfo{
-    var LabelText: String
+    var Text: String
     var Color: String
     
-    init(LabelText: String, Color: String){
+    init(Text: String, Color: String){
         self.Color = Color
-        self.LabelText = LabelText
+        self.Text = Text
     }
 }
 
 
 public class ButtonInfo : LabelInfo{
-    var Segue: String
+    var Segue: Scene
     
-    init(LabelText: String, Color: String, Segue: String){
+    init(Text: String, Color: String, Segue: Scene){
         self.Segue = Segue
-        super.init(LabelText: LabelText, Color: Color)
+        super.init(Text: Text, Color: Color)
     }
 }

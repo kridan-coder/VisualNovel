@@ -18,6 +18,7 @@
 		E69C5278260D113D00827520 /* quattrocento.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E69C5277260D113D00827520 /* quattrocento.ttf */; };
 		E69C527E26129AB600827520 /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C527D26129AB500827520 /* BusinessModel.swift */; };
 		E69C528126129BCB00827520 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C528026129BCB00827520 /* Extensions.swift */; };
+		E69C52862613363B00827520 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C52852613363B00827520 /* GameData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E69C5277260D113D00827520 /* quattrocento.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = quattrocento.ttf; path = ../../../../Downloads/Quattrocento/quattrocento.ttf; sourceTree = "<group>"; };
 		E69C527D26129AB500827520 /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 		E69C528026129BCB00827520 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E69C52852613363B00827520 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +76,10 @@
 				E6152C53260C90370091E48C /* Assets.xcassets */,
 				E6152C58260C90370091E48C /* Info.plist */,
 				E6152C79260CC0080091E48C /* Launch Screen.storyboard */,
-				E6152C7E260CCD1E0091E48C /* MainNavigationView.swift */,
 				E69C527D26129AB500827520 /* BusinessModel.swift */,
 				E69C528026129BCB00827520 /* Extensions.swift */,
+				E6152C7E260CCD1E0091E48C /* MainNavigationView.swift */,
+				E69C52852613363B00827520 /* GameData.swift */,
 			);
 			path = VisualNovel;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				E6152C4F260C90350091E48C /* CustomViewController.swift in Sources */,
 				E6152C4B260C90350091E48C /* AppDelegate.swift in Sources */,
 				E69C528126129BCB00827520 /* Extensions.swift in Sources */,
+				E69C52862613363B00827520 /* GameData.swift in Sources */,
 				E6152C4D260C90350091E48C /* SceneDelegate.swift in Sources */,
 				E6152C7F260CCD1E0091E48C /* MainNavigationView.swift in Sources */,
 			);

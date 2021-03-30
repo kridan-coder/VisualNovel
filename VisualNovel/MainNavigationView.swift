@@ -18,4 +18,8 @@ class MainNavigationView : UINavigationController{
         super.viewDidLoad()
     }
     
+    func setUpAndMoveToTheNextScene(scene: Scene)
+    {
+        
+    }
 }

@@ -24,68 +24,24 @@
             </objects>
             <point key="canvasLocation" x="-502" y="-1111"/>
         </scene>
-        <!--start-->
+        <!--hello-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CustomViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Egm-Qg-zIa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1SceneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6Xh-mf-K2m">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jc6-H3-u2T"/>
                         <color key="backgroundColor" name="AccentColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="6Xh-mf-K2m" secondAttribute="trailing" id="2HG-WY-bMs"/>
-                            <constraint firstItem="6Xh-mf-K2m" firstAttribute="leading" secondItem="Egm-Qg-zIa" secondAttribute="leading" id="6vW-u3-AaI"/>
-                            <constraint firstItem="6Xh-mf-K2m" firstAttribute="top" secondItem="jc6-H3-u2T" secondAttribute="top" id="9Oo-3O-gxJ"/>
-                            <constraint firstAttribute="bottom" secondItem="6Xh-mf-K2m" secondAttribute="bottom" id="OsP-af-3DW"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="start" id="T4X-YG-HD8"/>
+                    <navigationItem key="navigationItem" title="hello" id="T4X-YG-HD8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="335" y="-1112"/>
         </scene>
-        <!--continue-->
-        <scene sceneID="YcE-lp-HKr">
-            <objects>
-                <viewController id="b94-uW-3TA" customClass="CustomViewController" customModule="VisualNovel" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9jd-Ff-Eqf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1SceneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Eah-YI-qpU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KiriushaPNG" id="8dW-d7-yf8">
-                                <rect key="frame" x="0.0" y="176" width="310" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="gLE-zp-Gjl"/>
-                        <color key="backgroundColor" name="AccentColor"/>
-                        <constraints>
-                            <constraint firstItem="Eah-YI-qpU" firstAttribute="leading" secondItem="9jd-Ff-Eqf" secondAttribute="leading" id="77G-Oc-GRB"/>
-                            <constraint firstAttribute="bottom" secondItem="Eah-YI-qpU" secondAttribute="bottom" id="Bbg-4l-qUy"/>
-                            <constraint firstAttribute="trailing" secondItem="Eah-YI-qpU" secondAttribute="trailing" id="SHG-MA-O5p"/>
-                            <constraint firstItem="Eah-YI-qpU" firstAttribute="top" secondItem="gLE-zp-Gjl" secondAttribute="top" id="pvu-2r-2CW"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="continue" id="1Rz-Jx-YK5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xfc-m1-Zmd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1202.8037383177571" y="-1112.526997840173"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="1SceneBackground" width="720" height="1280"/>
-        <image name="KiriushaPNG" width="500" height="1232"/>
         <namedColor name="AccentColor">
             <color red="0.15294117647058825" green="0.31764705882352939" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
