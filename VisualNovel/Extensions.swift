@@ -91,7 +91,7 @@ extension UIViewController{
         guard let safeAdditionalImageName = additionalImageName else {
             return
         }
-        let additionalImage = UIImageView(frame: CGRect(x:0, y:0, width: screenSize.width/2, height: screenSize.height))
+        let additionalImage = UIImageView(frame: CGRect(x:0, y:0, width: screenSize.width/1.5, height: screenSize.height))
         additionalImage.image = UIImage(named: safeAdditionalImageName)
         additionalImage.contentMode = .scaleToFill
         additionalImage.translatesAutoresizingMaskIntoConstraints = false
