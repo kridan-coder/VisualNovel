@@ -8,14 +8,10 @@
 import Foundation
 import UIKit
 
-
-
-
 extension UITextField {
     func setTextFieldAppearance(placeholder: String, fontSize: CGFloat){
         self.placeholder = placeholder
         self.font = UIFont(name:"roboto", size: fontSize)
-        
         self.borderStyle = .none
         self.backgroundColor = UIColor(named: "LightGrayColor")
         self.autocorrectionType = .no
@@ -24,7 +20,11 @@ extension UITextField {
         self.clearButtonMode = .whileEditing
         self.contentHorizontalAlignment = .leading
         self.contentVerticalAlignment = .center
+        
     }
+
+    
+
 }
 
 extension UILabel {
