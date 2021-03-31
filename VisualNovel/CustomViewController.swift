@@ -9,16 +9,14 @@ import UIKit
 
 class CustomViewController: UIViewController {
 
-    var scene: Scene = .RoomKiriusha1
+    var scene: Scene = .Welcome
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpScene(data: GameData.getData(sceneName: scene))
     }
 
-    func buttonClicked(sender: UIButton){
-        setUpAnd
-    }
+
 
 }
 

@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 
+
+
 extension UITextField {
     func setTextFieldAppearance(placeholder: String, fontSize: CGFloat){
         self.placeholder = placeholder
@@ -48,9 +50,14 @@ extension UIButton {
         
 
     }
+    
+    @objc private func postNotificationButtonClicked() {
+        NotificationCenter.default.post(name: Notification.Name("NotificationButtonClicked"), object: nil, userInfo: ["sender" : self])
+    }
+    
     func setButtonTarget(target: Scene){
         self.tag = target.rawValue
-        self.addTarget(self, action: Selector(("buttonClicked")), for: .touchUpInside)
+        self.addTarget(self, action: #selector(postNotificationButtonClicked), for: .touchUpInside)
     }
 }
 

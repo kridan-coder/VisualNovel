@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 
+
 class MainNavigationView : UINavigationController{
+
+
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -16,10 +19,49 @@ class MainNavigationView : UINavigationController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.buttonClicked(_:)), name: Notification.Name("NotificationButtonClicked"), object: nil)
     }
     
-    func setUpAndMoveToTheNextScene(scene: Scene)
-    {
+    @objc func buttonClicked(_ notification: NSNotification){
         
+        guard let sender = notification.userInfo?["sender"] as? UIButton else { return }
+        
+        let vc = storyboard?.instantiateViewController(identifier: "main") as! CustomViewController
+        
+        switch sender.tag {
+        case Scene.Welcome.rawValue:
+            vc.scene = .Welcome
+        case Scene.RoomKiriusha1.rawValue:
+            vc.scene = .RoomKiriusha1
+        case Scene.RoomKiriusha2.rawValue:
+            vc.scene = .RoomKiriusha2
+        case Scene.Jogging.rawValue:
+            vc.scene = .Jogging
+        case Scene.Campfire.rawValue:
+            vc.scene = .Campfire
+        case Scene.Field.rawValue:
+            vc.scene = .Field
+        case Scene.FilmQuestion.rawValue:
+            vc.scene = .FilmQuestion
+        case Scene.FilmPositive.rawValue:
+            vc.scene = .FilmPositive
+        case Scene.FilmNegative.rawValue:
+            vc.scene = .FilmNegative
+        case Scene.Halloween.rawValue:
+            vc.scene = .Halloween
+        case Scene.CostumesOpinion.rawValue:
+            vc.scene = .CostumesOpinion
+        case Scene.CostumesNegative.rawValue:
+            vc.scene = .CostumesNegative
+        case Scene.CostumesPositive.rawValue:
+            vc.scene = .CostumesPositive
+        case Scene.Farewell.rawValue:
+            vc.scene = .Farewell
+        default: break
+        }
+        
+        pushViewController(vc, animated: true)
     }
+    
+
 }
