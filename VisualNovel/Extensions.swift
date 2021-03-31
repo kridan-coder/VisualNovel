@@ -23,7 +23,10 @@ extension UITextField {
         
     }
 
-    
+    func setTextFieldDelegate(delegate: UITextFieldDelegate)
+    {
+        self.delegate = delegate
+    }
 
 }
 
@@ -38,6 +41,7 @@ extension UILabel {
         self.textColor = UIColor.white
         self.numberOfLines = (superLabel) ? 3 : 1
     }
+
 }
 
 extension UIButton {
@@ -80,14 +84,14 @@ extension UIViewController{
     private var magicConstantForSmallLabel: CGFloat { get {return 0.46}}
     private var magicConstantForBigLabel: CGFloat { get {return 0.28}}
     
-    func setUpScene(data: ViewControllerData){
+    func setUpScene(data: ViewControllerData, delegate: UITextFieldDelegate){
         setBackgroundImage(backgroundImageName: data.backgroundImageName, additionalImageName: data.additionalImageName)
         switch data.sceneType
         {
         case .Main:
             setLabelAndButton(label: data.label, button: data.buttons[0])
         case .Input:
-            setTextFieldWithLabelAndButton(label: data.label, fieldPlaceholder: data.textFieldPlaceholder, button: data.buttons[0])
+            setTextFieldWithLabelAndButton(delegate: delegate, label: data.label, fieldPlaceholder: data.textFieldPlaceholder, button: data.buttons[0])
         case .Choice:
             setLabelAndButtons(label: data.label, buttons: data.buttons)
         }
@@ -112,7 +116,7 @@ extension UIViewController{
         
     }
     
-    private func setTextFieldWithLabelAndButton(label: LabelInfo, fieldPlaceholder: String?, button: ButtonInfo){
+    private func setTextFieldWithLabelAndButton(delegate: UITextFieldDelegate, label: LabelInfo, fieldPlaceholder: String?, button: ButtonInfo){
 
             let UIlabel = UILabel(frame: CGRect(x: 0, y: screenSize.midY + buttonHeight, width: screenSize.width, height: buttonHeight))
             UIlabel.setLabelAppearance(text: label.Text, color: label.Color, fontSize: buttonHeight*magicConstantForSmallLabel)
@@ -123,6 +127,7 @@ extension UIViewController{
             let UItextField = UITextField(frame: CGRect(x:0, y:currY, width: screenSize.width, height: buttonHeight*2)
             )
         UItextField.setTextFieldAppearance(placeholder: fieldPlaceholder ?? "Введите текст...", fontSize: buttonHeight*magicConstantForSmallLabel)
+        UItextField.setTextFieldDelegate(delegate: delegate)
 
             self.view.addSubview(UItextField)
 

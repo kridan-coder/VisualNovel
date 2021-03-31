@@ -18,15 +18,6 @@ class MainNavigationView : UINavigationController{
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(self.buttonClicked(_:)), name: Notification.Name("NotificationButtonClicked"), object: nil)
-        
-        NotificationCenter.default
-            .publisher(for: UITextField.textDidChangeNotification, object: nil)
-            .compactMap {$0.object as? UITextField}
-            .map {$0.text}
-            .sink(receiveValue: {GameData.userName = $0 ?? "Ксюша"})
-
-        
-        
     }
 
     
