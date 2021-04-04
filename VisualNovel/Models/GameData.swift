@@ -144,7 +144,7 @@ class GameData{
                 backgroundImageName: "1SceneBackground",
                 additionalImageName: nil,
                 label: LabelInfo(Text: "Спасибо, что поиграли!", Color: "BlueColor"),
-                buttons: [ButtonInfo(Text: "Пройти  еще раз", Color: "DarkBlueColor", Segue: Scene.Welcome)],
+                buttons: [ButtonInfo(Text: "Пройти еще раз", Color: "DarkBlueColor", Segue: Scene.Welcome)],
                 textFieldPlaceholder: nil
             )
         }

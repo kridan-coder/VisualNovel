@@ -10,7 +10,7 @@ import UIKit
 
 
 class MainNavigationView : UINavigationController{
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
@@ -19,7 +19,7 @@ class MainNavigationView : UINavigationController{
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(self.buttonClicked(_:)), name: Notification.Name("NotificationButtonClicked"), object: nil)
     }
-
+    
     
     @objc func buttonClicked(_ notification: NSNotification){
         
@@ -62,5 +62,5 @@ class MainNavigationView : UINavigationController{
         pushViewController(vc, animated: true)
     }
     
-
+    
 }

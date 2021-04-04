@@ -19,7 +19,7 @@ class SceneViewModel{
         self.scene = scene
         data = GameData.getData(sceneName: scene)
     }
-
+    
 }
 
 
