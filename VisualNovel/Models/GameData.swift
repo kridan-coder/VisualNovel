@@ -19,10 +19,10 @@ class GameData{
     
     static var userName = "Ксюша"
     
-    static func getData(sceneName: Scene) -> ViewControllerData {
+    static func getData(sceneName: Scene) -> SceneData {
         switch sceneName {
         case .Welcome:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Main,
                 backgroundImageName: "1SceneBackground",
                 additionalImageName: nil,
@@ -31,7 +31,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .RoomKiriusha1:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Input,
                 backgroundImageName: "1SceneBackground",
                 additionalImageName: "KiriushaPNG",
@@ -40,7 +40,7 @@ class GameData{
                 textFieldPlaceholder: "Введите имя..."
             )
         case .RoomKiriusha2:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "1SceneBackground",
                 additionalImageName: "KiriushaPNG",
@@ -49,16 +49,16 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .Jogging:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "2_1SceneBackground",
                 additionalImageName: nil,
                 label: LabelInfo(Text: "Может, пойдем домой?", Color: "DarkBlueColor"),
-                buttons: [ButtonInfo(Text: "Да, и посмотрим фильм", Color: "BlueColor", Segue: Scene.FilmQuestion), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween)],
+                buttons: [ButtonInfo(Text: "Да, и посмотрим фильм", Color: "BlueColor", Segue: Scene.FilmQuestion), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween), ButtonInfo(Text: "Да, и посмотрим фильм", Color: "BlueColor", Segue: Scene.FilmQuestion), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween)],
                 textFieldPlaceholder: nil
             )
         case .Campfire:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "2_2SceneBackground",
                 additionalImageName: nil,
@@ -67,7 +67,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .Field:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "2_3SceneBackground",
                 additionalImageName: nil,
@@ -76,7 +76,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .FilmQuestion:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "3_1SceneBackground",
                 additionalImageName: nil,
@@ -85,7 +85,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .FilmPositive:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "3_1SceneBackground",
                 additionalImageName: nil,
@@ -94,7 +94,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .FilmNegative:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "3_1SceneBackground",
                 additionalImageName: nil,
@@ -103,7 +103,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .Halloween:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "3_2SceneBackground",
                 additionalImageName: nil,
@@ -112,7 +112,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .CostumesOpinion:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "4SceneBackground",
                 additionalImageName: nil,
@@ -121,7 +121,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .CostumesPositive:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "4SceneBackground",
                 additionalImageName: nil,
@@ -130,7 +130,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .CostumesNegative:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Choice,
                 backgroundImageName: "4SceneBackground",
                 additionalImageName: nil,
@@ -139,7 +139,7 @@ class GameData{
                 textFieldPlaceholder: nil
             )
         case .Farewell:
-            return ViewControllerData(
+            return SceneData(
                 sceneType: .Main,
                 backgroundImageName: "1SceneBackground",
                 additionalImageName: nil,

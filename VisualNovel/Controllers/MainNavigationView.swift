@@ -25,37 +25,37 @@ class MainNavigationView : UINavigationController{
         
         guard let sender = notification.userInfo?["sender"] as? UIButton else { return }
         
-        let vc = storyboard?.instantiateViewController(identifier: "main") as! CustomViewController
+        let vc = storyboard?.instantiateViewController(identifier: "main") as! SceneViewController
         
         switch sender.tag {
         case Scene.Welcome.rawValue:
-            vc.scene = .Welcome
+            vc.viewModel = SceneViewModel(scene: .Welcome)
         case Scene.RoomKiriusha1.rawValue:
-            vc.scene = .RoomKiriusha1
+            vc.viewModel = SceneViewModel(scene: .RoomKiriusha1)
         case Scene.RoomKiriusha2.rawValue:
-            vc.scene = .RoomKiriusha2
+            vc.viewModel = SceneViewModel(scene: .RoomKiriusha2)
         case Scene.Jogging.rawValue:
-            vc.scene = .Jogging
+            vc.viewModel = SceneViewModel(scene: .Jogging)
         case Scene.Campfire.rawValue:
-            vc.scene = .Campfire
+            vc.viewModel = SceneViewModel(scene: .Campfire)
         case Scene.Field.rawValue:
-            vc.scene = .Field
+            vc.viewModel = SceneViewModel(scene: .Field)
         case Scene.FilmQuestion.rawValue:
-            vc.scene = .FilmQuestion
+            vc.viewModel = SceneViewModel(scene: .FilmQuestion)
         case Scene.FilmPositive.rawValue:
-            vc.scene = .FilmPositive
+            vc.viewModel = SceneViewModel(scene: .FilmPositive)
         case Scene.FilmNegative.rawValue:
-            vc.scene = .FilmNegative
+            vc.viewModel = SceneViewModel(scene: .FilmNegative)
         case Scene.Halloween.rawValue:
-            vc.scene = .Halloween
+            vc.viewModel = SceneViewModel(scene: .Halloween)
         case Scene.CostumesOpinion.rawValue:
-            vc.scene = .CostumesOpinion
+            vc.viewModel = SceneViewModel(scene: .CostumesOpinion)
         case Scene.CostumesNegative.rawValue:
-            vc.scene = .CostumesNegative
+            vc.viewModel = SceneViewModel(scene: .CostumesNegative)
         case Scene.CostumesPositive.rawValue:
-            vc.scene = .CostumesPositive
+            vc.viewModel = SceneViewModel(scene: .CostumesPositive)
         case Scene.Farewell.rawValue:
-            vc.scene = .Farewell
+            vc.viewModel = SceneViewModel(scene: .Farewell)
         default: break
         }
         

@@ -84,7 +84,7 @@ extension UIViewController{
     private var magicConstantForSmallLabel: CGFloat { get {return 0.46}}
     private var magicConstantForBigLabel: CGFloat { get {return 0.28}}
     
-    func setUpScene(data: ViewControllerData, delegate: UITextFieldDelegate){
+    func setUpScene(data: SceneData, delegate: UITextFieldDelegate){
         setBackgroundImage(backgroundImageName: data.backgroundImageName, additionalImageName: data.additionalImageName)
         switch data.sceneType
         {
@@ -153,8 +153,6 @@ extension UIViewController{
         UIbutton.setButtonAppearance(text: button.Text, color: button.Color, fontSize: buttonHeight*magicConstantForSmallLabel)
         UIbutton.setButtonTarget(target: button.Segue)
         self.view.addSubview(UIbutton)
-        
-        
         
     }
     

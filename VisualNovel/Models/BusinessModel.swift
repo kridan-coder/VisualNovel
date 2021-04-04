@@ -7,11 +7,11 @@
 
 import Foundation
 
-public enum SceneType{
+enum SceneType{
     case Main, Input, Choice
 }
 
-public struct ViewControllerData{
+struct SceneData{
     let sceneType: SceneType
     let backgroundImageName: String
     let additionalImageName: String?
@@ -20,7 +20,7 @@ public struct ViewControllerData{
     let textFieldPlaceholder: String?
 }
 
-public class LabelInfo{
+class LabelInfo{
     var Text: String
     var Color: String
     
@@ -31,7 +31,7 @@ public class LabelInfo{
 }
 
 
-public class ButtonInfo : LabelInfo{
+class ButtonInfo : LabelInfo{
     var Segue: Scene
     
     init(Text: String, Color: String, Segue: Scene){

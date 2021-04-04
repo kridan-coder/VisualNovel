@@ -7,26 +7,28 @@
 
 import UIKit
 
-class CustomViewController: UIViewController, UITextFieldDelegate {
+class SceneViewController: UIViewController, UITextFieldDelegate {
 
-    var scene: Scene = .Welcome
-
+    var viewModel = SceneViewModel(scene: .Welcome)
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if let safeText = textField.text
         {
-            GameData.userName = safeText
+            if !safeText.isEmpty
+            {
+                viewModel.userName = safeText
+            }
         }
+        
         return true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpScene(data: GameData.getData(sceneName: scene), delegate: self)
+        
+        setUpScene(data: viewModel.data, delegate: self)
+        
     }
 
-
-
 }
-
-
