@@ -20,7 +20,6 @@
 		E69C528126129BCB00827520 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C528026129BCB00827520 /* Extensions.swift */; };
 		E69C52862613363B00827520 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C52852613363B00827520 /* GameData.swift */; };
 		E69C528E2618D99D00827520 /* SceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C528D2618D99D00827520 /* SceneViewModel.swift */; };
-		E69C52932619771100827520 /* SceneRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C52922619771100827520 /* SceneRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		E69C528026129BCB00827520 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E69C52852613363B00827520 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		E69C528D2618D99D00827520 /* SceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewModel.swift; sourceTree = "<group>"; };
-		E69C52922619771100827520 /* SceneRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 		E6152C49260C90350091E48C /* VisualNovel */ = {
 			isa = PBXGroup;
 			children = (
-				E69C5291261976EF00827520 /* Protocols */,
 				E69C528C2618D02500827520 /* SupportingFiles */,
 				E69C528B2618CF9A00827520 /* Controllers */,
 				E69C528A2618CF7C00827520 /* ViewModels */,
@@ -129,14 +126,6 @@
 				E69C528026129BCB00827520 /* Extensions.swift */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		E69C5291261976EF00827520 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				E69C52922619771100827520 /* SceneRepresentable.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +208,6 @@
 				E6152C4D260C90350091E48C /* SceneDelegate.swift in Sources */,
 				E69C528E2618D99D00827520 /* SceneViewModel.swift in Sources */,
 				E6152C7F260CCD1E0091E48C /* MainNavigationView.swift in Sources */,
-				E69C52932619771100827520 /* SceneRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

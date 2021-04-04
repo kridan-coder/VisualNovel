@@ -54,7 +54,7 @@ class GameData{
                 backgroundImageName: "2_1SceneBackground",
                 additionalImageName: nil,
                 label: LabelInfo(Text: "Может, пойдем домой?", Color: "DarkBlueColor"),
-                buttons: [ButtonInfo(Text: "Да, и посмотрим фильм", Color: "BlueColor", Segue: Scene.FilmQuestion), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween), ButtonInfo(Text: "Да, и посмотрим фильм", Color: "BlueColor", Segue: Scene.FilmQuestion), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween)],
+                buttons: [ButtonInfo(Text: "Да, и посмотрим фильм", Color: "BlueColor", Segue: Scene.FilmQuestion), ButtonInfo(Text: "Да, и отпразднуем Хэллоуин", Color: "BlueColor", Segue: Scene.Halloween)],
                 textFieldPlaceholder: nil
             )
         case .Campfire:
